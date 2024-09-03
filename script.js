@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const contacto = urlParams.get('contacto') || 'No disponible';
     const email = urlParams.get('email') || 'No disponible';
     const area = urlParams.get('area') || 'No disponible';
-    const fechainicio = urlParams.get('fechainicio') || 'No disponible';
-    const fechatermino = urlParams.get('fechatermino') || 'No disponible';
     const horainicio = urlParams.get('horainicio') || 'No disponible';
     const horatermino = urlParams.get('horatermino') || 'No disponible';
+    const fechainicio = urlParams.get('fechainicio') || 'No disponible';
+    const fechatermino = urlParams.get('fechatermino') || 'No disponible';
 
     // Muestra los datos en la página
     const dataContainer = document.getElementById('data-container');
@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
       <p><strong>Contacto:</strong> ${contacto}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Área donde se dirige:</strong> ${area}</p>
-      <p><strong>Fecha de inicio:</strong> ${fechainicio}</p>
-      <p><strong>Fecha de término:</strong> ${fechatermino}</p>
       <p><strong>Hora de Ingreso:</strong> ${horainicio}</p>
       <p><strong>Hora de salida:</strong> ${horatermino}</p>
+      <p><strong>Fecha de inicio:</strong> ${fechainicio}</p>
+      <p><strong>Fecha de término:</strong> ${fechatermino}</p>
     `;
 
     // Genera la URL para la página con todos los datos codificados
